@@ -11,6 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: hsl(30, 38%, 92%);
+  overflow-x: hidden;
 }
 
 .card {
@@ -107,11 +108,12 @@ button i {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 804px) {
   .card {
     flex-direction: column;
     width: 24em;
     height: 40em;
+    margin: 0 10px 0 10px;
   }
 
   .card-pic {
@@ -125,10 +127,9 @@ button i {
   }
 
   .mobile-img {
-    position: absolute;
-    object-fit: contain;
     width: 100%;
     visibility: visible;
+    height: 100%;
   }
 
   .card-details {
